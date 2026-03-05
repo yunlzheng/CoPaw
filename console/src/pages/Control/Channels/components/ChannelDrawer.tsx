@@ -104,6 +104,7 @@ export function ChannelDrawer({
               name="dm_policy"
               label={t("channels.dmPolicy")}
               tooltip={t("channels.dmPolicyTooltip")}
+              initialValue="open"
             >
               <Select
                 options={[
@@ -116,6 +117,7 @@ export function ChannelDrawer({
               name="group_policy"
               label={t("channels.groupPolicy")}
               tooltip={t("channels.groupPolicyTooltip")}
+              initialValue="open"
             >
               <Select
                 options={[
@@ -128,6 +130,7 @@ export function ChannelDrawer({
               name="allow_from"
               label={t("channels.allowFrom")}
               tooltip={t("channels.allowFromTooltip")}
+              initialValue={[]}
             >
               <Select
                 mode="tags"

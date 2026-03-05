@@ -298,7 +298,6 @@ class DingTalkChannelHandler(dingtalk_stream.ChatbotHandler):
                 "sender_id": sender,
                 "content_parts": parts_to_send,
                 "meta": meta,
-                "conversation_type": conversation_type,
             }
             if raw_msg_id:
                 native["message_id"] = raw_msg_id
