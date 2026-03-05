@@ -92,12 +92,14 @@ class DingTalkChannel(BaseChannel):
         dm_policy: str = "open",
         group_policy: str = "open",
         allow_from: Optional[List[str]] = None,
+        filter_thinking: bool = False,
     ):
         super().__init__(
             process,
             on_reply_sent=on_reply_sent,
             show_tool_details=show_tool_details,
             filter_tool_messages=filter_tool_messages,
+            filter_thinking=filter_thinking,
         )
         self.enabled = enabled
         self.client_id = client_id
@@ -165,6 +167,7 @@ class DingTalkChannel(BaseChannel):
         on_reply_sent: OnReplySent = None,
         show_tool_details: bool = True,
         filter_tool_messages: bool = False,
+        filter_thinking: bool = False,
     ) -> "DingTalkChannel":
         return cls(
             process=process,
@@ -179,6 +182,7 @@ class DingTalkChannel(BaseChannel):
             dm_policy=config.dm_policy or "open",
             group_policy=config.group_policy or "open",
             allow_from=config.allow_from or [],
+            filter_thinking=filter_thinking,
         )
 
     # ---------------------------

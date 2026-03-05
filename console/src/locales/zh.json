@@ -226,6 +226,8 @@
     "botPrefix": "机器人前缀",
     "filterToolMessages": "显示工具消息",
     "filterToolMessagesTooltip": "向用户显示工具调用和输出消息（关闭则隐藏）",
+    "filterThinking": "显示思考过程",
+    "filterThinkingTooltip": "向用户显示模型的思考/推理内容（关闭则隐藏）",
     "notSet": "未设置",
     "clickCardToEdit": "点击卡片进行编辑",
     "settings": "设置",
@@ -469,5 +471,20 @@
     "chatDisabledMessage": "聊天功能已禁用，因为未配置模型。请配置模型以启用聊天功能。",
     "configureNow": "配置模型",
     "modelNotConfigured": "请先在设置中配置模型后再使用聊天功能"
+  },
+  "header": {
+    "changelog": "更新日志",
+    "docs": "文档",
+    "tutorial": "教程",
+    "faq": "常见问题",
+    "github": "GitHub"
+  },
+  "sidebar": {
+    "newVersion": "发现新版本 v{{version}}，点击前往升级",
+    "updateModal": {
+      "title": "发现新版本 v{{version}}",
+      "viewReleases": "查看 Releases",
+      "close": "关闭"
+    }
   }
 }
