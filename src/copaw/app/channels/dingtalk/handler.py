@@ -293,9 +293,6 @@ class DingTalkChannelHandler(dingtalk_stream.ChatbotHandler):
                 "dingtalk accept: raw_msg_id=%r",
                 raw_msg_id or "(empty)",
             )
-            conversation_type = conversation_type_from_chatbot_message(
-                incoming_message,
-            )
             native = {
                 "channel_id": "dingtalk",
                 "sender_id": sender,
